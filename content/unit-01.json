@@ -1,0 +1,78 @@
+{
+  "unit": {
+    "number": 1,
+    "title": "Addition, equation, and conclusion",
+    "exercises": [
+      {
+        "number": 2,
+        "instruction": "Complete the sentences using the word bank.",
+        "shared": {
+          "wordBank": [
+            "also",
+            "as well as",
+            "in addition",
+            "moreover",
+            "however",
+            "in contrast",
+            "therefore",
+            "consequently",
+            "similarly",
+            "likewise"
+          ]
+        },
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "Tourism brings much needed money to developing countries. ____ it provides employment for the local population.",
+            "answers": ["Moreover", "In addition", "Also"]
+          },
+          {
+            "number": 2,
+            "prompt": "____ bringing much needed money to developing countries, tourism provides employment for the local population.",
+            "answers": ["As well as"]
+          },
+          {
+            "number": 3,
+            "prompt": "Tourists should respect the local environment. ____ they should respect the local customs.",
+            "answers": ["In addition", "Moreover", "Also"]
+          },
+          {
+            "number": 4,
+            "prompt": "____ industrial waste, pollution from car fumes is poisoning the environment.",
+            "answers": ["In addition to", "As well as"]
+          },
+          {
+            "number": 5,
+            "prompt": "In order to travel, you need a passport. ____, you might need a visa.",
+            "answers": ["In addition", "Moreover"]
+          },
+          {
+            "number": 6,
+            "prompt": "Knives are banned from hand baggage on all flights. ____ other sharp objects.",
+            "answers": ["As well as", "In addition to"]
+          },
+          {
+            "number": 7,
+            "prompt": "All power corrupts. ____, absolute power corrupts absolutely.",
+            "answers": ["Similarly", "Likewise"]
+          },
+          {
+            "number": 8,
+            "prompt": "You shouldn’t smoke or eat unhealthy food. ____, you should live a healthier lifestyle.",
+            "answers": ["Therefore", "Consequently"]
+          },
+          {
+            "number": 9,
+            "prompt": "The ozone layer is depleted. ____, pollution is destroying the planet.",
+            "answers": ["Consequently", "Therefore"]
+          },
+          {
+            "number": 10,
+            "prompt": "Your grades have been poor all year. ____, you need to work harder.",
+            "answers": ["Therefore", "Consequently"]
+          }
+        ]
+      }
+    ]
+  }
+}
