@@ -69,8 +69,13 @@ async function init() {
               return;
             }
 
-            // 2️⃣ Otherwise, jump to first question of next exercise
-            const nextExercise = section.nextElementSibling;
+            // 2️⃣ Otherwise, jump to first question of next exercise (ROBUST)
+            const exercises = Array.from(
+              document.querySelectorAll(".exercise")
+            );
+            const currentIndex = exercises.indexOf(section);
+            const nextExercise = exercises[currentIndex + 1];
+
             if (nextExercise) {
               const firstQuestion =
                 nextExercise.querySelector(".questions li");
@@ -105,8 +110,8 @@ async function init() {
   });
 
   // Initial focus
-  const firstInput = document.querySelector(".questions li");
-  if (firstInput) focusQuestion(firstInput);
+  const firstQuestion = document.querySelector(".questions li");
+  if (firstQuestion) focusQuestion(firstQuestion);
 }
 
 init();
