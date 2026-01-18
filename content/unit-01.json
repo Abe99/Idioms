@@ -58,7 +58,7 @@
           },
           {
             "number": 8,
-            "prompt": "You shouldn’t smoke or eat unhealthy food. ____, you should live a healthier lifestyle.",
+            "prompt": "You shouldn't smoke or eat unhealthy food. ____, you should live a healthier lifestyle.",
             "answers": ["Therefore", "Consequently"]
           },
           {
@@ -70,6 +70,28 @@
             "number": 10,
             "prompt": "Your grades have been poor all year. ____, you need to work harder.",
             "answers": ["Therefore", "Consequently"]
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "instruction": "Complete the sentences using the correct connector.",
+        "shared": {
+          "wordBank": [
+            "however",
+            "therefore"
+          ]
+        },
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "The experiment was carefully designed. ____, the results were unreliable.",
+            "answers": ["However"]
+          },
+          {
+            "number": 2,
+            "prompt": "The evidence was overwhelming. ____, the jury reached a unanimous verdict.",
+            "answers": ["Therefore"]
           }
         ]
       }
