@@ -5,6 +5,7 @@
     "exercises": [
       {
         "number": 2,
+        "type": "fill-blank",
         "instruction": "Complete the sentences using the word bank.",
         "shared": {
           "wordBank": [
@@ -75,23 +76,23 @@
       },
       {
         "number": 3,
-        "instruction": "Complete the sentences using the correct connector.",
-        "shared": {
-          "wordBank": [
-            "however",
-            "therefore"
-          ]
-        },
+        "type": "choice-inline",
+        "instruction": "Choose the American English word.",
         "questions": [
           {
             "number": 1,
-            "prompt": "The experiment was carefully designed. ____, the results were unreliable.",
-            "answers": ["However"]
+            "prompt": "The play is in two acts, with a short intermission / interval between the two.",
+            "answers": ["intermission"]
           },
           {
             "number": 2,
-            "prompt": "The evidence was overwhelming. ____, the jury reached a unanimous verdict.",
-            "answers": ["Therefore"]
+            "prompt": "The apartment has a large closet / wardrobe in the bedroom.",
+            "answers": ["closet"]
+          },
+          {
+            "number": 3,
+            "prompt": "He left his truck in the parking lot / car park overnight.",
+            "answers": ["parking lot"]
           }
         ]
       }
