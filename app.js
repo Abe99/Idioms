@@ -11,6 +11,34 @@ function focusQuestion(li) {
   li.querySelector("input").focus();
 }
 
+// v1.1 helper: render prompt with inline choices
+function renderPrompt(prompt, type) {
+  if (type !== "choice-inline") {
+    return document.createTextNode(prompt);
+  }
+
+  const fragment = document.createDocumentFragment();
+
+  // Split on " / " while keeping separators logical
+  const parts = prompt.split(" / ");
+
+  parts.forEach((part, index) => {
+    // First part is normal text
+    if (index === 0) {
+      fragment.appendChild(document.createTextNode(part + " "));
+      return;
+    }
+
+    // Choice part
+    const span = document.createElement("span");
+    span.className = "choice-inline";
+    span.textContent = "/ " + part;
+    fragment.appendChild(span);
+  });
+
+  return fragment;
+}
+
 async function init() {
   const res = await fetch("content/unit-01.json");
   const data = await res.json();
@@ -46,7 +74,9 @@ async function init() {
 
     exercise.questions.forEach(q => {
       const li = document.createElement("li");
-      li.textContent = q.prompt;
+
+      // 🔹 v1.1 rendering
+      li.appendChild(renderPrompt(q.prompt, exercise.type));
 
       const input = document.createElement("input");
       const hint = document.createElement("span");
@@ -62,14 +92,12 @@ async function init() {
           input.classList.add("correct");
 
           setTimeout(() => {
-            // 1️⃣ Try next question in same exercise
             const nextQuestion = li.nextElementSibling;
             if (nextQuestion) {
               focusQuestion(nextQuestion);
               return;
             }
 
-            // 2️⃣ Otherwise, jump to first question of next exercise (ROBUST)
             const exercises = Array.from(
               document.querySelectorAll(".exercise")
             );
@@ -109,7 +137,6 @@ async function init() {
     app.appendChild(section);
   });
 
-  // Initial focus
   const firstQuestion = document.querySelector(".questions li");
   if (firstQuestion) focusQuestion(firstQuestion);
 }
