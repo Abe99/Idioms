@@ -11,7 +11,12 @@ function focusQuestion(li) {
   li.querySelector("input").focus();
 }
 
-// v1.1 helper: render prompt with inline choices
+/*
+  v1.1 — Correct inline-choice rendering
+  - Preserves original sentence exactly
+  - Wraps only the choice segment
+  - Does NOT rebuild spacing or punctuation
+*/
 function renderPrompt(prompt, type) {
   if (type !== "choice-inline") {
     return document.createTextNode(prompt);
@@ -19,21 +24,18 @@ function renderPrompt(prompt, type) {
 
   const fragment = document.createDocumentFragment();
 
-  // Split on " / " while keeping separators logical
-  const parts = prompt.split(" / ");
+  // Split while keeping "/ choice" segments intact
+  const tokens = prompt.split(/(\/[^\/]+)/g);
 
-  parts.forEach((part, index) => {
-    // First part is normal text
-    if (index === 0) {
-      fragment.appendChild(document.createTextNode(part + " "));
-      return;
+  tokens.forEach(token => {
+    if (token.startsWith("/")) {
+      const span = document.createElement("span");
+      span.className = "choice-inline";
+      span.textContent = token;
+      fragment.appendChild(span);
+    } else {
+      fragment.appendChild(document.createTextNode(token));
     }
-
-    // Choice part
-    const span = document.createElement("span");
-    span.className = "choice-inline";
-    span.textContent = "/ " + part;
-    fragment.appendChild(span);
   });
 
   return fragment;
@@ -65,7 +67,8 @@ async function init() {
     if (exercise.shared?.wordBank) {
       const wb = document.createElement("div");
       wb.className = "word-bank";
-      wb.textContent = "Word bank: " + exercise.shared.wordBank.join(" · ");
+      wb.textContent =
+        "Word bank: " + exercise.shared.wordBank.join(" · ");
       section.appendChild(wb);
     }
 
@@ -75,10 +78,12 @@ async function init() {
     exercise.questions.forEach(q => {
       const li = document.createElement("li");
 
-      // 🔹 v1.1 rendering
+      // v1.1 prompt rendering
       li.appendChild(renderPrompt(q.prompt, exercise.type));
 
       const input = document.createElement("input");
+      input.type = "text";
+
       const hint = document.createElement("span");
       hint.className = "hint hidden";
 
@@ -92,12 +97,14 @@ async function init() {
           input.classList.add("correct");
 
           setTimeout(() => {
+            // Next question in same exercise
             const nextQuestion = li.nextElementSibling;
             if (nextQuestion) {
               focusQuestion(nextQuestion);
               return;
             }
 
+            // First question of next exercise
             const exercises = Array.from(
               document.querySelectorAll(".exercise")
             );
@@ -137,6 +144,7 @@ async function init() {
     app.appendChild(section);
   });
 
+  // Initial focus
   const firstQuestion = document.querySelector(".questions li");
   if (firstQuestion) focusQuestion(firstQuestion);
 }
