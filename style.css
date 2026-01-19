@@ -80,4 +80,9 @@ input.wrong {
   font-size: 0.9rem;
 }
 
+.choice-inline {
+  color: var(--subtext0);
+}
+
+
 .hidden { display: none; }
