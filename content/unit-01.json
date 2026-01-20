@@ -95,6 +95,40 @@
             "answers": ["parking lot"]
           }
         ]
+      },
+      {
+        "number": 4,
+        "type": "matching",
+        "instruction": "Match each word with its function.",
+        "shared": {
+          "reference": [
+            "addition",
+            "contrast",
+            "conclusion"
+          ],
+          "pairs": {
+            "moreover": "addition",
+            "however": "contrast",
+            "therefore": "conclusion"
+          }
+        },
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "moreover",
+            "answers": ["addition"]
+          },
+          {
+            "number": 2,
+            "prompt": "however",
+            "answers": ["contrast"]
+          },
+          {
+            "number": 3,
+            "prompt": "therefore",
+            "answers": ["conclusion"]
+          }
+        ]
       }
     ]
   }
