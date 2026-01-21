@@ -50,15 +50,36 @@ function renderPrompt(prompt, type) {
   return document.createTextNode(prompt);
 }
 
-async function init() {
-  const res = await fetch("content/unit-01.json");
-  const data = await res.json();
+/* =========================
+   Unit loading logic
+   ========================= */
+async function loadUnit() {
+  const params = new URLSearchParams(window.location.search);
+  const requestedUnit = parseInt(params.get("unit"), 10);
 
+  const registryRes = await fetch("content/units.json");
+  const registry = await registryRes.json();
+
+  const units = registry.units;
+
+  let unitEntry =
+    units.find(u => u.number === requestedUnit) || units[0];
+
+  const unitRes = await fetch(`content/${unitEntry.file}`);
+  const unitData = await unitRes.json();
+
+  renderUnit(unitData);
+}
+
+/* =========================
+   Rendering engine
+   ========================= */
+function renderUnit(data) {
   const app = document.getElementById("app");
   app.innerHTML = "";
 
   const h1 = document.createElement("h1");
-  h1.textContent = `Unit 1: ${data.unit.title}`;
+  h1.textContent = `Unit ${data.unit.number}: ${data.unit.title}`;
   app.appendChild(h1);
 
   data.unit.exercises.forEach(exercise => {
@@ -120,14 +141,12 @@ async function init() {
           input.classList.add("correct");
 
           setTimeout(() => {
-            // 1️⃣ next question in same exercise
             const nextQuestion = li.nextElementSibling;
             if (nextQuestion) {
               focusQuestion(nextQuestion);
               return;
             }
 
-            // 2️⃣ next exercise (ROBUST VERSION)
             const currentExercise = li.closest(".exercise");
             const allExercises = Array.from(
               document.querySelectorAll(".exercise")
@@ -172,4 +191,7 @@ async function init() {
   if (first) focusQuestion(first);
 }
 
-init();
+/* =========================
+   Boot
+   ========================= */
+loadUnit();
