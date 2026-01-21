@@ -46,31 +46,6 @@
             "number": 5,
             "prompt": "In order to travel, you need a passport. ____, you might need a visa.",
             "answers": ["In addition", "Moreover"]
-          },
-          {
-            "number": 6,
-            "prompt": "Knives are banned from hand baggage on all flights. ____ other sharp objects.",
-            "answers": ["As well as", "In addition to"]
-          },
-          {
-            "number": 7,
-            "prompt": "All power corrupts. ____, absolute power corrupts absolutely.",
-            "answers": ["Similarly", "Likewise"]
-          },
-          {
-            "number": 8,
-            "prompt": "You shouldn't smoke or eat unhealthy food. ____, you should live a healthier lifestyle.",
-            "answers": ["Therefore", "Consequently"]
-          },
-          {
-            "number": 9,
-            "prompt": "The ozone layer is depleted. ____, pollution is destroying the planet.",
-            "answers": ["Consequently", "Therefore"]
-          },
-          {
-            "number": 10,
-            "prompt": "Your grades have been poor all year. ____, you need to work harder.",
-            "answers": ["Therefore", "Consequently"]
           }
         ]
       },
@@ -88,11 +63,6 @@
             "number": 2,
             "prompt": "The apartment has a large closet / wardrobe in the bedroom.",
             "answers": ["closet"]
-          },
-          {
-            "number": 3,
-            "prompt": "He left his truck in the parking lot / car park overnight.",
-            "answers": ["parking lot"]
           }
         ]
       },
@@ -101,16 +71,7 @@
         "type": "matching",
         "instruction": "Match each word with its function.",
         "shared": {
-          "reference": [
-            "addition",
-            "contrast",
-            "conclusion"
-          ],
-          "pairs": {
-            "moreover": "addition",
-            "however": "contrast",
-            "therefore": "conclusion"
-          }
+          "reference": ["addition", "contrast", "conclusion"]
         },
         "questions": [
           {
@@ -135,18 +96,7 @@
         "type": "categorization",
         "instruction": "Decide which category each word belongs to.",
         "shared": {
-          "categories": [
-            "addition",
-            "contrast",
-            "conclusion"
-          ],
-          "mapping": {
-            "also": "addition",
-            "however": "contrast",
-            "therefore": "conclusion",
-            "moreover": "addition",
-            "consequently": "conclusion"
-          }
+          "categories": ["addition", "contrast", "conclusion"]
         },
         "questions": [
           {
@@ -163,16 +113,23 @@
             "number": 3,
             "prompt": "therefore",
             "answers": ["conclusion"]
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "type": "word-formation",
+        "instruction": "Complete each sentence using the correct form of the word in brackets.",
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "The government is investing heavily in ________ (educate).",
+            "answers": ["education"]
           },
           {
-            "number": 4,
-            "prompt": "moreover",
-            "answers": ["addition"]
-          },
-          {
-            "number": 5,
-            "prompt": "consequently",
-            "answers": ["conclusion"]
+            "number": 2,
+            "prompt": "There has been a significant ________ in the quality of teaching in recent years (improve).",
+            "answers": ["improvement"]
           }
         ]
       }
