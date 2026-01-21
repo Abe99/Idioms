@@ -51,7 +51,7 @@ function renderPrompt(prompt, type) {
 }
 
 /* =========================
-   Unit loading logic
+   Unit loading + selector
    ========================= */
 async function loadUnit() {
   const params = new URLSearchParams(window.location.search);
@@ -59,16 +59,32 @@ async function loadUnit() {
 
   const registryRes = await fetch("content/units.json");
   const registry = await registryRes.json();
-
   const units = registry.units;
 
-  let unitEntry =
+  const currentUnit =
     units.find(u => u.number === requestedUnit) || units[0];
 
-  const unitRes = await fetch(`content/${unitEntry.file}`);
+  renderUnitSelector(units, currentUnit.number);
+
+  const unitRes = await fetch(`content/${currentUnit.file}`);
   const unitData = await unitRes.json();
 
   renderUnit(unitData);
+}
+
+function renderUnitSelector(units, activeNumber) {
+  const nav = document.getElementById("unit-selector");
+  nav.innerHTML = "";
+
+  units.forEach(unit => {
+    const link = document.createElement("a");
+    link.href = `?unit=${unit.number}`;
+    link.textContent = unit.number;
+    if (unit.number === activeNumber) {
+      link.classList.add("active");
+    }
+    nav.appendChild(link);
+  });
 }
 
 /* =========================
