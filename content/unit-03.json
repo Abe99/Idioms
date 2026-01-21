@@ -1,0 +1,100 @@
+{
+  "unit": {
+    "number": 3,
+    "title": "Changes",
+    "exercises": [
+      {
+        "number": 1,
+        "type": "fill-blank",
+        "instruction": "Complete the sentences using the correct word.",
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "There has been a significant ________ in the way people communicate over the last decade.",
+            "answers": ["change"]
+          },
+          {
+            "number": 2,
+            "prompt": "The city has undergone rapid ________ in recent years.",
+            "answers": ["development"]
+          },
+          {
+            "number": 3,
+            "prompt": "The company decided to ________ its policy after customer complaints.",
+            "answers": ["modify", "change", "alter"]
+          },
+          {
+            "number": 4,
+            "prompt": "Economic conditions began to ________ shortly after the crisis.",
+            "answers": ["deteriorate", "worsen"]
+          },
+          {
+            "number": 5,
+            "prompt": "There was a sharp ________ in unemployment figures last year.",
+            "answers": ["increase", "rise"]
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "type": "categorization",
+        "instruction": "Decide whether each word describes an increase or a decrease.",
+        "shared": {
+          "categories": ["increase", "decrease"]
+        },
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "expand",
+            "answers": ["increase"]
+          },
+          {
+            "number": 2,
+            "prompt": "reduce",
+            "answers": ["decrease"]
+          },
+          {
+            "number": 3,
+            "prompt": "decline",
+            "answers": ["decrease"]
+          },
+          {
+            "number": 4,
+            "prompt": "grow",
+            "answers": ["increase"]
+          },
+          {
+            "number": 5,
+            "prompt": "shrink",
+            "answers": ["decrease"]
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "type": "matching",
+        "instruction": "Match each word with its meaning.",
+        "shared": {
+          "reference": ["become worse", "change slightly", "improve"]
+        },
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "deteriorate",
+            "answers": ["become worse"]
+          },
+          {
+            "number": 2,
+            "prompt": "adjust",
+            "answers": ["change slightly"]
+          },
+          {
+            "number": 3,
+            "prompt": "improve",
+            "answers": ["improve"]
+          }
+        ]
+      }
+    ]
+  }
+}
