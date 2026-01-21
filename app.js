@@ -11,29 +11,46 @@ function focusQuestion(li) {
   li.querySelector("input").focus();
 }
 
-/* ================================
-   choice-inline prompt rendering
-   ================================ */
+/* =========================
+   Prompt rendering
+   ========================= */
 function renderPrompt(prompt, type) {
-  if (type !== "choice-inline") {
-    return document.createTextNode(prompt);
+  const fragment = document.createDocumentFragment();
+
+  // choice-inline
+  if (type === "choice-inline") {
+    const tokens = prompt.split(/(\/[^\/]+)/g);
+    tokens.forEach(token => {
+      if (token.startsWith("/")) {
+        const span = document.createElement("span");
+        span.className = "choice-inline";
+        span.textContent = token;
+        fragment.appendChild(span);
+      } else {
+        fragment.appendChild(document.createTextNode(token));
+      }
+    });
+    return fragment;
   }
 
-  const fragment = document.createDocumentFragment();
-  const tokens = prompt.split(/(\/[^\/]+)/g);
+  // word-formation
+  if (type === "word-formation") {
+    const tokens = prompt.split(/(\([^)]*\))/g);
+    tokens.forEach(token => {
+      if (token.startsWith("(") && token.endsWith(")")) {
+        const span = document.createElement("span");
+        span.className = "base-word";
+        span.textContent = token;
+        fragment.appendChild(span);
+      } else {
+        fragment.appendChild(document.createTextNode(token));
+      }
+    });
+    return fragment;
+  }
 
-  tokens.forEach(token => {
-    if (token.startsWith("/")) {
-      const span = document.createElement("span");
-      span.className = "choice-inline";
-      span.textContent = token;
-      fragment.appendChild(span);
-    } else {
-      fragment.appendChild(document.createTextNode(token));
-    }
-  });
-
-  return fragment;
+  // default
+  return document.createTextNode(prompt);
 }
 
 async function init() {
@@ -59,10 +76,6 @@ async function init() {
     p.textContent = exercise.instruction;
     section.appendChild(p);
 
-    /* ================================
-       Shared resources
-       ================================ */
-
     if (exercise.type === "fill-blank" && exercise.shared?.wordBank) {
       const wb = document.createElement("div");
       wb.className = "word-bank";
@@ -87,16 +100,11 @@ async function init() {
       section.appendChild(cat);
     }
 
-    /* ================================
-       Questions
-       ================================ */
-
     const ol = document.createElement("ol");
     ol.className = "questions";
 
     exercise.questions.forEach(q => {
       const li = document.createElement("li");
-
       li.appendChild(renderPrompt(q.prompt, exercise.type));
 
       const input = document.createElement("input");
@@ -111,42 +119,20 @@ async function init() {
         if (e.key !== "Enter") return;
 
         if (isCorrect(input.value, q.answers)) {
-          input.classList.remove("wrong");
-          input.classList.add("correct");
-
+          input.className = "correct";
           setTimeout(() => {
-            const nextQuestion = li.nextElementSibling;
-            if (nextQuestion) {
-              focusQuestion(nextQuestion);
-              return;
-            }
-
-            const exercises = Array.from(
-              document.querySelectorAll(".exercise")
-            );
-            const currentIndex = exercises.indexOf(section);
-            const nextExercise = exercises[currentIndex + 1];
-
-            if (nextExercise) {
-              const firstQuestion =
-                nextExercise.querySelector(".questions li");
-              if (firstQuestion) {
-                focusQuestion(firstQuestion);
-              }
-            }
+            const next = li.nextElementSibling;
+            if (next) focusQuestion(next);
           }, 150);
         } else {
           attempts++;
-          input.classList.remove("correct");
-          input.classList.add("wrong");
+          input.className = "wrong";
           input.select();
 
           if (attempts >= 2) {
             hint.textContent = q.answers[0];
             hint.classList.remove("hidden");
-            setTimeout(() => {
-              hint.classList.add("hidden");
-            }, 1200);
+            setTimeout(() => hint.classList.add("hidden"), 1200);
           }
         }
       });
@@ -160,8 +146,8 @@ async function init() {
     app.appendChild(section);
   });
 
-  const firstQuestion = document.querySelector(".questions li");
-  if (firstQuestion) focusQuestion(firstQuestion);
+  const first = document.querySelector(".questions li");
+  if (first) focusQuestion(first);
 }
 
 init();
