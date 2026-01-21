@@ -76,6 +76,10 @@ async function init() {
     p.textContent = exercise.instruction;
     section.appendChild(p);
 
+    /* =========================
+       Shared resources
+       ========================= */
+
     if (exercise.type === "fill-blank" && exercise.shared?.wordBank) {
       const wb = document.createElement("div");
       wb.className = "word-bank";
@@ -100,11 +104,16 @@ async function init() {
       section.appendChild(cat);
     }
 
+    /* =========================
+       Questions
+       ========================= */
+
     const ol = document.createElement("ol");
     ol.className = "questions";
 
     exercise.questions.forEach(q => {
       const li = document.createElement("li");
+
       li.appendChild(renderPrompt(q.prompt, exercise.type));
 
       const input = document.createElement("input");
@@ -119,20 +128,44 @@ async function init() {
         if (e.key !== "Enter") return;
 
         if (isCorrect(input.value, q.answers)) {
-          input.className = "correct";
+          input.classList.remove("wrong");
+          input.classList.add("correct");
+
           setTimeout(() => {
-            const next = li.nextElementSibling;
-            if (next) focusQuestion(next);
+            // 1️⃣ Next question in same exercise
+            const nextQuestion = li.nextElementSibling;
+            if (nextQuestion) {
+              focusQuestion(nextQuestion);
+              return;
+            }
+
+            // 2️⃣ First question of next exercise
+            const exercises = Array.from(
+              document.querySelectorAll(".exercise")
+            );
+            const currentIndex = exercises.indexOf(section);
+            const nextExercise = exercises[currentIndex + 1];
+
+            if (nextExercise) {
+              const firstQuestion =
+                nextExercise.querySelector(".questions li");
+              if (firstQuestion) {
+                focusQuestion(firstQuestion);
+              }
+            }
           }, 150);
         } else {
           attempts++;
-          input.className = "wrong";
+          input.classList.remove("correct");
+          input.classList.add("wrong");
           input.select();
 
           if (attempts >= 2) {
             hint.textContent = q.answers[0];
             hint.classList.remove("hidden");
-            setTimeout(() => hint.classList.add("hidden"), 1200);
+            setTimeout(() => {
+              hint.classList.add("hidden");
+            }, 1200);
           }
         }
       });
@@ -146,6 +179,7 @@ async function init() {
     app.appendChild(section);
   });
 
+  // Initial focus
   const first = document.querySelector(".questions li");
   if (first) focusQuestion(first);
 }
