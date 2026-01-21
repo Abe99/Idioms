@@ -11,9 +11,9 @@ function focusQuestion(li) {
   li.querySelector("input").focus();
 }
 
-/*
-  v1.1 — Correct inline-choice rendering
-*/
+/* ================================
+   choice-inline prompt rendering
+   ================================ */
 function renderPrompt(prompt, type) {
   if (type !== "choice-inline") {
     return document.createTextNode(prompt);
@@ -60,10 +60,9 @@ async function init() {
     section.appendChild(p);
 
     /* ================================
-       Shared resources rendering
+       Shared resources
        ================================ */
 
-    // fill-blank → word bank
     if (exercise.type === "fill-blank" && exercise.shared?.wordBank) {
       const wb = document.createElement("div");
       wb.className = "word-bank";
@@ -72,7 +71,6 @@ async function init() {
       section.appendChild(wb);
     }
 
-    // matching → reference list
     if (exercise.type === "matching" && exercise.shared?.reference) {
       const ref = document.createElement("div");
       ref.className = "word-bank";
@@ -81,13 +79,24 @@ async function init() {
       section.appendChild(ref);
     }
 
+    if (exercise.type === "categorization" && exercise.shared?.categories) {
+      const cat = document.createElement("div");
+      cat.className = "word-bank";
+      cat.textContent =
+        "Categories: " + exercise.shared.categories.join(" · ");
+      section.appendChild(cat);
+    }
+
+    /* ================================
+       Questions
+       ================================ */
+
     const ol = document.createElement("ol");
     ol.className = "questions";
 
     exercise.questions.forEach(q => {
       const li = document.createElement("li");
 
-      // Prompt rendering (sentence, inline-choice, or plain word)
       li.appendChild(renderPrompt(q.prompt, exercise.type));
 
       const input = document.createElement("input");
@@ -106,14 +115,12 @@ async function init() {
           input.classList.add("correct");
 
           setTimeout(() => {
-            // Next question in same exercise
             const nextQuestion = li.nextElementSibling;
             if (nextQuestion) {
               focusQuestion(nextQuestion);
               return;
             }
 
-            // First question of next exercise
             const exercises = Array.from(
               document.querySelectorAll(".exercise")
             );
@@ -153,7 +160,6 @@ async function init() {
     app.appendChild(section);
   });
 
-  // Initial focus
   const firstQuestion = document.querySelector(".questions li");
   if (firstQuestion) focusQuestion(firstQuestion);
 }
