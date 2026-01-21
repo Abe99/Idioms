@@ -1,7 +1,9 @@
 :root {
+  /* Catppuccin Mocha */
   --base: #1e1e2e;
   --mantle: #181825;
   --surface0: #313244;
+  --surface1: #45475a;
   --surface2: #585b70;
 
   --text: #cdd6f4;
@@ -17,6 +19,10 @@
           "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 2rem;
@@ -27,6 +33,39 @@ body {
   line-height: 1.6;
 }
 
+/* =========================
+   Unit selector
+   ========================= */
+
+#unit-selector {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+#unit-selector a {
+  padding: 0.25rem 0.6rem;
+  background: var(--surface0);
+  color: var(--subtext1);
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+#unit-selector a:hover {
+  background: var(--surface2);
+}
+
+#unit-selector a.active {
+  background: var(--blue);
+  color: var(--base);
+}
+
+/* =========================
+   Exercises
+   ========================= */
+
 .exercise {
   background: var(--mantle);
   padding: 1.25rem 1.5rem;
@@ -34,9 +73,14 @@ body {
   border-left: 4px solid var(--surface2);
 }
 
+.exercise h2 {
+  margin-top: 0;
+}
+
 .exercise p {
   color: var(--subtext0);
   font-style: italic;
+  margin-bottom: 0.75rem;
 }
 
 .word-bank {
@@ -45,12 +89,25 @@ body {
   padding: 0.5rem;
   margin-bottom: 1rem;
   font-size: 0.95rem;
+  border-radius: 4px;
+}
+
+/* =========================
+   Questions
+   ========================= */
+
+.questions {
+  padding-left: 1.25rem;
 }
 
 .questions li {
   margin-bottom: 1rem;
   scroll-margin-top: 40vh;
 }
+
+/* =========================
+   Inputs
+   ========================= */
 
 input {
   margin-left: 0.5rem;
@@ -59,6 +116,7 @@ input {
   color: var(--text);
   border: 1px solid var(--surface2);
   border-radius: 4px;
+  font-size: 1rem;
 }
 
 input:focus {
@@ -76,6 +134,10 @@ input.wrong {
   border-color: var(--maroon);
 }
 
+/* =========================
+   Inline semantics
+   ========================= */
+
 .choice-inline {
   color: var(--subtext0);
 }
@@ -83,6 +145,10 @@ input.wrong {
 .base-word {
   color: var(--subtext0);
 }
+
+/* =========================
+   Hint
+   ========================= */
 
 .hint {
   margin-left: 0.5rem;
