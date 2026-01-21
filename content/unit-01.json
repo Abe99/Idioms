@@ -129,6 +129,52 @@
             "answers": ["conclusion"]
           }
         ]
+      },
+      {
+        "number": 5,
+        "type": "categorization",
+        "instruction": "Decide which category each word belongs to.",
+        "shared": {
+          "categories": [
+            "addition",
+            "contrast",
+            "conclusion"
+          ],
+          "mapping": {
+            "also": "addition",
+            "however": "contrast",
+            "therefore": "conclusion",
+            "moreover": "addition",
+            "consequently": "conclusion"
+          }
+        },
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "also",
+            "answers": ["addition"]
+          },
+          {
+            "number": 2,
+            "prompt": "however",
+            "answers": ["contrast"]
+          },
+          {
+            "number": 3,
+            "prompt": "therefore",
+            "answers": ["conclusion"]
+          },
+          {
+            "number": 4,
+            "prompt": "moreover",
+            "answers": ["addition"]
+          },
+          {
+            "number": 5,
+            "prompt": "consequently",
+            "answers": ["conclusion"]
+          }
+        ]
       }
     ]
   }
