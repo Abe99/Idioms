@@ -1,0 +1,113 @@
+{
+  "unit": {
+    "number": 2,
+    "title": "American English",
+    "exercises": [
+      {
+        "number": 1,
+        "type": "choice-inline",
+        "instruction": "Choose the American English word.",
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "The play is in two acts, with a short intermission / interval between the two.",
+            "answers": ["intermission"]
+          },
+          {
+            "number": 2,
+            "prompt": "He left his truck in the parking lot / car park overnight.",
+            "answers": ["parking lot"]
+          },
+          {
+            "number": 3,
+            "prompt": "The apartment has a large closet / wardrobe in the bedroom.",
+            "answers": ["closet"]
+          },
+          {
+            "number": 4,
+            "prompt": "She lives on the first floor / second floor of the building.",
+            "answers": ["second floor"]
+          },
+          {
+            "number": 5,
+            "prompt": "Please stand in line / queue while you wait.",
+            "answers": ["line"]
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "type": "fill-blank",
+        "instruction": "Replace the British English word with the American English equivalent.",
+        "shared": {
+          "wordBank": [
+            "apartment",
+            "truck",
+            "gasoline",
+            "vacation",
+            "elevator"
+          ]
+        },
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "They rented a flat in the city center while they were staying there.",
+            "answers": ["apartment"]
+          },
+          {
+            "number": 2,
+            "prompt": "The lorry was delivering food to the supermarket.",
+            "answers": ["truck"]
+          },
+          {
+            "number": 3,
+            "prompt": "We stopped to buy petrol before continuing our journey.",
+            "answers": ["gasoline"]
+          },
+          {
+            "number": 4,
+            "prompt": "They are going on holiday next month.",
+            "answers": ["vacation"]
+          },
+          {
+            "number": 5,
+            "prompt": "Take the lift to the fifth floor.",
+            "answers": ["elevator"]
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "type": "choice-inline",
+        "instruction": "Choose the correct American spelling.",
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "The company is expanding its traveling / travelling staff.",
+            "answers": ["traveling"]
+          },
+          {
+            "number": 2,
+            "prompt": "You can find the full list in the catalog / catalogue.",
+            "answers": ["catalog"]
+          },
+          {
+            "number": 3,
+            "prompt": "The movie theater is located in the city center / centre.",
+            "answers": ["center"]
+          },
+          {
+            "number": 4,
+            "prompt": "He specializes in pediatric / paediatric medicine.",
+            "answers": ["pediatric"]
+          },
+          {
+            "number": 5,
+            "prompt": "The check is enclosed / cheque is enclosed with this letter.",
+            "answers": ["check"]
+          }
+        ]
+      }
+    ]
+  }
+}
