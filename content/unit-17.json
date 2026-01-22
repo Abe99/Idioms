@@ -1,0 +1,55 @@
+{
+  "unit": {
+    "number": 17,
+    "title": "Emphasis and Restriction",
+    "exercises": [
+      {
+        "number": 1,
+        "type": "fill-blank",
+        "instruction": "Complete the sentences using the correct word.",
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "The study focuses ________ on environmental factors.",
+            "answers": ["primarily", "mainly"]
+          },
+          {
+            "number": 2,
+            "prompt": "This treatment is ________ effective in early stages.",
+            "answers": ["only"]
+          },
+          {
+            "number": 3,
+            "prompt": "The policy applies ________ to new employees.",
+            "answers": ["solely", "exclusively"]
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "type": "categorization",
+        "instruction": "Decide whether each word emphasizes or restricts meaning.",
+        "shared": {
+          "categories": ["emphasis", "restriction"]
+        },
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "particularly",
+            "answers": ["emphasis"]
+          },
+          {
+            "number": 2,
+            "prompt": "only",
+            "answers": ["restriction"]
+          },
+          {
+            "number": 3,
+            "prompt": "mainly",
+            "answers": ["emphasis"]
+          }
+        ]
+      }
+    ]
+  }
+}
