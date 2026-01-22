@@ -1,0 +1,125 @@
+{
+  "unit": {
+    "number": 6,
+    "title": "Cause and Effect",
+    "exercises": [
+      {
+        "number": 1,
+        "type": "fill-blank",
+        "instruction": "Complete the sentences using the correct word or phrase.",
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "Heavy rainfall ________ severe flooding in the region.",
+            "answers": ["caused", "led to", "resulted in"]
+          },
+          {
+            "number": 2,
+            "prompt": "The accident occurred ________ poor visibility.",
+            "answers": ["because of", "due to"]
+          },
+          {
+            "number": 3,
+            "prompt": "The company increased prices. ________, sales declined.",
+            "answers": ["As a result", "Consequently", "Therefore"]
+          },
+          {
+            "number": 4,
+            "prompt": "Lack of funding can ________ delays in the project.",
+            "answers": ["cause", "lead to", "result in"]
+          },
+          {
+            "number": 5,
+            "prompt": "The policy change had a significant ________ on employment levels.",
+            "answers": ["effect", "impact"]
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "type": "categorization",
+        "instruction": "Decide whether each expression shows a cause or an effect.",
+        "shared": {
+          "categories": ["cause", "effect"]
+        },
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "as a result",
+            "answers": ["effect"]
+          },
+          {
+            "number": 2,
+            "prompt": "because of",
+            "answers": ["cause"]
+          },
+          {
+            "number": 3,
+            "prompt": "lead to",
+            "answers": ["effect"]
+          },
+          {
+            "number": 4,
+            "prompt": "due to",
+            "answers": ["cause"]
+          },
+          {
+            "number": 5,
+            "prompt": "result in",
+            "answers": ["effect"]
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "type": "matching",
+        "instruction": "Match each word with its meaning.",
+        "shared": {
+          "reference": [
+            "make something happen",
+            "the result of an action"
+          ]
+        },
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "cause",
+            "answers": ["make something happen"]
+          },
+          {
+            "number": 2,
+            "prompt": "effect",
+            "answers": ["the result of an action"]
+          },
+          {
+            "number": 3,
+            "prompt": "consequence",
+            "answers": ["the result of an action"]
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "type": "word-formation",
+        "instruction": "Complete each sentence using the correct form of the word in brackets.",
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "The decision had serious economic ________ (consequence).",
+            "answers": ["consequences"]
+          },
+          {
+            "number": 2,
+            "prompt": "Several factors ________ to the final outcome (contribute).",
+            "answers": ["contributed"]
+          },
+          {
+            "number": 3,
+            "prompt": "Environmental damage can have long-term ________ (affect).",
+            "answers": ["effects"]
+          }
+        ]
+      }
+    ]
+  }
+}
