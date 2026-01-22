@@ -1,0 +1,65 @@
+{
+  "unit": {
+    "number": 9,
+    "title": "Reason and Purpose",
+    "exercises": [
+      {
+        "number": 1,
+        "type": "fill-blank",
+        "instruction": "Complete the sentences using the correct word or phrase.",
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "The experiment was repeated ________ the results could be confirmed.",
+            "answers": ["so that", "in order that"]
+          },
+          {
+            "number": 2,
+            "prompt": "She stayed late ________ she could finish the report.",
+            "answers": ["so that", "in order to"]
+          },
+          {
+            "number": 3,
+            "prompt": "The match was cancelled ________ heavy rain.",
+            "answers": ["because of", "due to"]
+          },
+          {
+            "number": 4,
+            "prompt": "He whispered ________ nobody could hear him.",
+            "answers": ["so that"]
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "type": "categorization",
+        "instruction": "Decide whether each expression shows reason or purpose.",
+        "shared": {
+          "categories": ["reason", "purpose"]
+        },
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "because of",
+            "answers": ["reason"]
+          },
+          {
+            "number": 2,
+            "prompt": "so that",
+            "answers": ["purpose"]
+          },
+          {
+            "number": 3,
+            "prompt": "due to",
+            "answers": ["reason"]
+          },
+          {
+            "number": 4,
+            "prompt": "in order to",
+            "answers": ["purpose"]
+          }
+        ]
+      }
+    ]
+  }
+}
