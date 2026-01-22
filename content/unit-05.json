@@ -1,0 +1,125 @@
+{
+  "unit": {
+    "number": 5,
+    "title": "Comparing and Contrasting",
+    "exercises": [
+      {
+        "number": 1,
+        "type": "fill-blank",
+        "instruction": "Complete the sentences using the correct word or phrase.",
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "Living in the city is more expensive ________ living in the countryside.",
+            "answers": ["than"]
+          },
+          {
+            "number": 2,
+            "prompt": "This method is ________ efficient than the previous one.",
+            "answers": ["more"]
+          },
+          {
+            "number": 3,
+            "prompt": "Her explanation was clearer ________ mine.",
+            "answers": ["than"]
+          },
+          {
+            "number": 4,
+            "prompt": "The new model performs ________ better than the old version.",
+            "answers": ["much", "far"]
+          },
+          {
+            "number": 5,
+            "prompt": "This solution is the ________ effective of all those proposed.",
+            "answers": ["most"]
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "type": "categorization",
+        "instruction": "Decide whether each expression shows similarity or contrast.",
+        "shared": {
+          "categories": ["similarity", "contrast"]
+        },
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "similarly",
+            "answers": ["similarity"]
+          },
+          {
+            "number": 2,
+            "prompt": "in contrast",
+            "answers": ["contrast"]
+          },
+          {
+            "number": 3,
+            "prompt": "likewise",
+            "answers": ["similarity"]
+          },
+          {
+            "number": 4,
+            "prompt": "on the other hand",
+            "answers": ["contrast"]
+          },
+          {
+            "number": 5,
+            "prompt": "both",
+            "answers": ["similarity"]
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "type": "matching",
+        "instruction": "Match each expression with its meaning.",
+        "shared": {
+          "reference": [
+            "showing similarity",
+            "showing difference"
+          ]
+        },
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "in the same way",
+            "answers": ["showing similarity"]
+          },
+          {
+            "number": 2,
+            "prompt": "by comparison",
+            "answers": ["showing difference"]
+          },
+          {
+            "number": 3,
+            "prompt": "whereas",
+            "answers": ["showing difference"]
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "type": "word-formation",
+        "instruction": "Complete each sentence using the correct form of the word in brackets.",
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "There is a clear ________ between the two approaches (different).",
+            "answers": ["difference"]
+          },
+          {
+            "number": 2,
+            "prompt": "The results were surprisingly ________ to those obtained earlier (similar).",
+            "answers": ["similar"]
+          },
+          {
+            "number": 3,
+            "prompt": "The two theories are not directly ________ (compare).",
+            "answers": ["comparable"]
+          }
+        ]
+      }
+    ]
+  }
+}
