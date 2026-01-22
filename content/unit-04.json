@@ -1,0 +1,126 @@
+{
+  "unit": {
+    "number": 4,
+    "title": "Describing Trends",
+    "exercises": [
+      {
+        "number": 1,
+        "type": "fill-blank",
+        "instruction": "Complete the sentences using the correct word.",
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "There has been a steady ________ in the number of students applying for the course.",
+            "answers": ["increase", "rise"]
+          },
+          {
+            "number": 2,
+            "prompt": "Sales figures showed a sharp ________ at the end of the year.",
+            "answers": ["decline", "drop", "fall"]
+          },
+          {
+            "number": 3,
+            "prompt": "The population has remained relatively ________ over the last decade.",
+            "answers": ["stable", "constant"]
+          },
+          {
+            "number": 4,
+            "prompt": "Oil prices began to ________ dramatically after the announcement.",
+            "answers": ["fall", "drop", "decline"]
+          },
+          {
+            "number": 5,
+            "prompt": "There was a gradual ________ in productivity following the reforms.",
+            "answers": ["improvement", "increase"]
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "type": "categorization",
+        "instruction": "Decide whether each word describes an increase, a decrease, or stability.",
+        "shared": {
+          "categories": ["increase", "decrease", "stability"]
+        },
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "rise",
+            "answers": ["increase"]
+          },
+          {
+            "number": 2,
+            "prompt": "fluctuate",
+            "answers": ["stability"]
+          },
+          {
+            "number": 3,
+            "prompt": "drop",
+            "answers": ["decrease"]
+          },
+          {
+            "number": 4,
+            "prompt": "remain steady",
+            "answers": ["stability"]
+          },
+          {
+            "number": 5,
+            "prompt": "soar",
+            "answers": ["increase"]
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "type": "matching",
+        "instruction": "Match each expression with its meaning.",
+        "shared": {
+          "reference": [
+            "increase quickly",
+            "decrease suddenly",
+            "stay the same"
+          ]
+        },
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "rocket",
+            "answers": ["increase quickly"]
+          },
+          {
+            "number": 2,
+            "prompt": "plunge",
+            "answers": ["decrease suddenly"]
+          },
+          {
+            "number": 3,
+            "prompt": "level off",
+            "answers": ["stay the same"]
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "type": "word-formation",
+        "instruction": "Complete each sentence using the correct form of the word in brackets.",
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "The ________ in demand surprised industry experts (increase).",
+            "answers": ["increase"]
+          },
+          {
+            "number": 2,
+            "prompt": "There has been a noticeable ________ in housing prices (reduce).",
+            "answers": ["reduction"]
+          },
+          {
+            "number": 3,
+            "prompt": "Economic ________ depends on several external factors (stable).",
+            "answers": ["stability"]
+          }
+        ]
+      }
+    ]
+  }
+}
