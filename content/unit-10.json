@@ -1,0 +1,58 @@
+{
+  "unit": {
+    "number": 10,
+    "title": "Condition",
+    "exercises": [
+      {
+        "number": 1,
+        "type": "fill-blank",
+        "instruction": "Complete the sentences using the correct word or phrase.",
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "You can borrow the book ________ you return it by Friday.",
+            "answers": ["provided that", "as long as"]
+          },
+          {
+            "number": 2,
+            "prompt": "________ it rains, the match will be postponed.",
+            "answers": ["If", "Unless"]
+          },
+          {
+            "number": 3,
+            "prompt": "The plan will succeed ________ everyone cooperates.",
+            "answers": ["if"]
+          },
+          {
+            "number": 4,
+            "prompt": "You will fail the exam ________ you study harder.",
+            "answers": ["unless"]
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "type": "matching",
+        "instruction": "Match each expression with its meaning.",
+        "shared": {
+          "reference": [
+            "on condition that",
+            "except if"
+          ]
+        },
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "provided that",
+            "answers": ["on condition that"]
+          },
+          {
+            "number": 2,
+            "prompt": "unless",
+            "answers": ["except if"]
+          }
+        ]
+      }
+    ]
+  }
+}
