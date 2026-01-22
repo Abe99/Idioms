@@ -1,0 +1,60 @@
+{
+  "unit": {
+    "number": 11,
+    "title": "Time and Sequence",
+    "exercises": [
+      {
+        "number": 1,
+        "type": "fill-blank",
+        "instruction": "Complete the sentences using the correct word.",
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "Please finish your work ________ you leave.",
+            "answers": ["before"]
+          },
+          {
+            "number": 2,
+            "prompt": "He felt much better ________ taking the medicine.",
+            "answers": ["after"]
+          },
+          {
+            "number": 3,
+            "prompt": "The lights went out ________ the storm.",
+            "answers": ["during"]
+          },
+          {
+            "number": 4,
+            "prompt": "The manager was speaking; ________, the staff waited outside.",
+            "answers": ["meanwhile"]
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "type": "categorization",
+        "instruction": "Decide whether each expression refers to time before, after, or during.",
+        "shared": {
+          "categories": ["before", "after", "during"]
+        },
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "prior to",
+            "answers": ["before"]
+          },
+          {
+            "number": 2,
+            "prompt": "subsequently",
+            "answers": ["after"]
+          },
+          {
+            "number": 3,
+            "prompt": "throughout",
+            "answers": ["during"]
+          }
+        ]
+      }
+    ]
+  }
+}
