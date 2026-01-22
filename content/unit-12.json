@@ -1,0 +1,55 @@
+{
+  "unit": {
+    "number": 12,
+    "title": "Addition (Advanced)",
+    "exercises": [
+      {
+        "number": 1,
+        "type": "fill-blank",
+        "instruction": "Complete the sentences using the correct word or phrase.",
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "The research is expensive. ________, it takes several years to complete.",
+            "answers": ["Moreover", "Furthermore"]
+          },
+          {
+            "number": 2,
+            "prompt": "The policy is unpopular; ________, it has been widely criticized.",
+            "answers": ["in addition", "furthermore"]
+          },
+          {
+            "number": 3,
+            "prompt": "The job requires experience and ________ strong communication skills.",
+            "answers": ["also"]
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "type": "categorization",
+        "instruction": "Decide whether each expression adds information or gives emphasis.",
+        "shared": {
+          "categories": ["addition", "emphasis"]
+        },
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "furthermore",
+            "answers": ["addition"]
+          },
+          {
+            "number": 2,
+            "prompt": "not only",
+            "answers": ["emphasis"]
+          },
+          {
+            "number": 3,
+            "prompt": "what is more",
+            "answers": ["addition"]
+          }
+        ]
+      }
+    ]
+  }
+}
