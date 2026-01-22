@@ -1,0 +1,47 @@
+{
+  "unit": {
+    "number": 14,
+    "title": "Cause and Result (Advanced)",
+    "exercises": [
+      {
+        "number": 1,
+        "type": "fill-blank",
+        "instruction": "Complete the sentences using the correct word.",
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "The decline in sales was ________ to increased competition.",
+            "answers": ["attributed"]
+          },
+          {
+            "number": 2,
+            "prompt": "Several factors ________ to the failure of the project.",
+            "answers": ["contributed"]
+          },
+          {
+            "number": 3,
+            "prompt": "The policy resulted ________ significant changes.",
+            "answers": ["in"]
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "type": "word-formation",
+        "instruction": "Complete each sentence using the correct form of the word in brackets.",
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "Economic ________ is influenced by global markets (develop).",
+            "answers": ["development"]
+          },
+          {
+            "number": 2,
+            "prompt": "The decision had long-term ________ (consequence).",
+            "answers": ["consequences"]
+          }
+        ]
+      }
+    ]
+  }
+}
