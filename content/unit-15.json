@@ -1,0 +1,55 @@
+{
+  "unit": {
+    "number": 15,
+    "title": "Opinion and Attitude",
+    "exercises": [
+      {
+        "number": 1,
+        "type": "fill-blank",
+        "instruction": "Complete the sentences using the correct word.",
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "Many experts ________ that the situation will improve.",
+            "answers": ["believe", "think"]
+          },
+          {
+            "number": 2,
+            "prompt": "The proposal was widely ________ by the committee.",
+            "answers": ["criticized"]
+          },
+          {
+            "number": 3,
+            "prompt": "The findings were generally ________ as positive.",
+            "answers": ["regarded", "considered"]
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "type": "categorization",
+        "instruction": "Decide whether each word shows a positive or negative attitude.",
+        "shared": {
+          "categories": ["positive", "negative"]
+        },
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "supportive",
+            "answers": ["positive"]
+          },
+          {
+            "number": 2,
+            "prompt": "skeptical",
+            "answers": ["negative"]
+          },
+          {
+            "number": 3,
+            "prompt": "critical",
+            "answers": ["negative"]
+          }
+        ]
+      }
+    ]
+  }
+}
