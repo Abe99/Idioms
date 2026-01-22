@@ -1,0 +1,125 @@
+{
+  "unit": {
+    "number": 7,
+    "title": "Addition and Emphasis",
+    "exercises": [
+      {
+        "number": 1,
+        "type": "fill-blank",
+        "instruction": "Complete the sentences using the correct word or phrase.",
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "The plan is expensive. ________, it is unlikely to succeed.",
+            "answers": ["Moreover", "Furthermore"]
+          },
+          {
+            "number": 2,
+            "prompt": "The company must reduce costs. ________, it needs to improve efficiency.",
+            "answers": ["In addition", "Furthermore", "Moreover"]
+          },
+          {
+            "number": 3,
+            "prompt": "She is highly qualified and ________ experienced.",
+            "answers": ["also", "very"]
+          },
+          {
+            "number": 4,
+            "prompt": "The proposal was rejected, ________ because of its high cost.",
+            "answers": ["mainly", "largely"]
+          },
+          {
+            "number": 5,
+            "prompt": "The new system is ________ more reliable than the old one.",
+            "answers": ["significantly", "considerably"]
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "type": "categorization",
+        "instruction": "Decide whether each expression shows addition or emphasis.",
+        "shared": {
+          "categories": ["addition", "emphasis"]
+        },
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "in addition",
+            "answers": ["addition"]
+          },
+          {
+            "number": 2,
+            "prompt": "moreover",
+            "answers": ["addition"]
+          },
+          {
+            "number": 3,
+            "prompt": "particularly",
+            "answers": ["emphasis"]
+          },
+          {
+            "number": 4,
+            "prompt": "especially",
+            "answers": ["emphasis"]
+          },
+          {
+            "number": 5,
+            "prompt": "as well",
+            "answers": ["addition"]
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "type": "matching",
+        "instruction": "Match each expression with its function.",
+        "shared": {
+          "reference": [
+            "add information",
+            "give special importance"
+          ]
+        },
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "furthermore",
+            "answers": ["add information"]
+          },
+          {
+            "number": 2,
+            "prompt": "in particular",
+            "answers": ["give special importance"]
+          },
+          {
+            "number": 3,
+            "prompt": "what is more",
+            "answers": ["add information"]
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "type": "word-formation",
+        "instruction": "Complete each sentence using the correct form of the word in brackets.",
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "The findings were ________ important for future research (particular).",
+            "answers": ["particularly"]
+          },
+          {
+            "number": 2,
+            "prompt": "The issue has received ________ attention in recent years (increase).",
+            "answers": ["increased"]
+          },
+          {
+            "number": 3,
+            "prompt": "This factor is of ________ importance in the final decision (signify).",
+            "answers": ["significant"]
+          }
+        ]
+      }
+    ]
+  }
+}
