@@ -1,0 +1,53 @@
+{
+  "unit": {
+    "number": 18,
+    "title": "Comparison (Advanced)",
+    "exercises": [
+      {
+        "number": 1,
+        "type": "fill-blank",
+        "instruction": "Complete the sentences using the correct word or phrase.",
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "This solution is ________ effective than the alternative.",
+            "answers": ["more"]
+          },
+          {
+            "number": 2,
+            "prompt": "The results were ________ similar to those obtained earlier.",
+            "answers": ["remarkably", "strikingly"]
+          },
+          {
+            "number": 3,
+            "prompt": "Method A is superior ________ Method B in accuracy.",
+            "answers": ["to"]
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "type": "matching",
+        "instruction": "Match each expression with its meaning.",
+        "shared": {
+          "reference": [
+            "showing a clear difference",
+            "showing strong similarity"
+          ]
+        },
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "in contrast to",
+            "answers": ["showing a clear difference"]
+          },
+          {
+            "number": 2,
+            "prompt": "on a par with",
+            "answers": ["showing strong similarity"]
+          }
+        ]
+      }
+    ]
+  }
+}
