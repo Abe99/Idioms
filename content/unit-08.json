@@ -1,0 +1,65 @@
+{
+  "unit": {
+    "number": 8,
+    "title": "Concession and Contrast",
+    "exercises": [
+      {
+        "number": 1,
+        "type": "fill-blank",
+        "instruction": "Complete the sentences using the correct word or phrase.",
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "________ the weather was bad, the event was well attended.",
+            "answers": ["Although", "Though"]
+          },
+          {
+            "number": 2,
+            "prompt": "The plan was risky. ________, it was approved.",
+            "answers": ["Nevertheless", "However"]
+          },
+          {
+            "number": 3,
+            "prompt": "________ his lack of experience, he performed very well.",
+            "answers": ["Despite", "In spite of"]
+          },
+          {
+            "number": 4,
+            "prompt": "The results were disappointing; ________, they provided useful data.",
+            "answers": ["however", "nevertheless"]
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "type": "categorization",
+        "instruction": "Decide whether each expression shows concession or contrast.",
+        "shared": {
+          "categories": ["concession", "contrast"]
+        },
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "although",
+            "answers": ["concession"]
+          },
+          {
+            "number": 2,
+            "prompt": "however",
+            "answers": ["contrast"]
+          },
+          {
+            "number": 3,
+            "prompt": "despite",
+            "answers": ["concession"]
+          },
+          {
+            "number": 4,
+            "prompt": "on the other hand",
+            "answers": ["contrast"]
+          }
+        ]
+      }
+    ]
+  }
+}
