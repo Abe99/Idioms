@@ -1,0 +1,55 @@
+{
+  "unit": {
+    "number": 13,
+    "title": "Contrast (Advanced)",
+    "exercises": [
+      {
+        "number": 1,
+        "type": "fill-blank",
+        "instruction": "Complete the sentences using the correct word or phrase.",
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "The two theories are similar; ________, their conclusions differ.",
+            "answers": ["however", "nevertheless"]
+          },
+          {
+            "number": 2,
+            "prompt": "The proposal was well prepared. ________, it was rejected.",
+            "answers": ["Nonetheless", "Nevertheless"]
+          },
+          {
+            "number": 3,
+            "prompt": "Some students preferred lectures, ________ others favored seminars.",
+            "answers": ["whereas", "while"]
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "type": "categorization",
+        "instruction": "Decide whether each expression shows contrast or concession.",
+        "shared": {
+          "categories": ["contrast", "concession"]
+        },
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "however",
+            "answers": ["contrast"]
+          },
+          {
+            "number": 2,
+            "prompt": "although",
+            "answers": ["concession"]
+          },
+          {
+            "number": 3,
+            "prompt": "on the other hand",
+            "answers": ["contrast"]
+          }
+        ]
+      }
+    ]
+  }
+}
