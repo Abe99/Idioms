@@ -1,14 +1,22 @@
 {
   "units": [
-    {
-      "number": 1,
-      "title": "Addition, equation, and conclusion",
-      "file": "unit-01.json"
-    },
-    {
-      "number": 2,
-      "title": "American English",
-      "file": "unit-02.json"
-    }
+    { "number": 1, "title": "Addition, Equation, and Conclusion", "file": "unit-01.json" },
+    { "number": 2, "title": "American English", "file": "unit-02.json" },
+    { "number": 3, "title": "Changes", "file": "unit-03.json" },
+    { "number": 4, "title": "Describing Trends", "file": "unit-04.json" },
+    { "number": 5, "title": "Comparing and Contrasting", "file": "unit-05.json" },
+    { "number": 6, "title": "Cause and Effect", "file": "unit-06.json" },
+    { "number": 7, "title": "Addition and Emphasis", "file": "unit-07.json" },
+    { "number": 8, "title": "Concession and Contrast", "file": "unit-08.json" },
+    { "number": 9, "title": "Reason and Purpose", "file": "unit-09.json" },
+    { "number": 10, "title": "Condition", "file": "unit-10.json" },
+    { "number": 11, "title": "Time and Sequence", "file": "unit-11.json" },
+    { "number": 12, "title": "Addition (Advanced)", "file": "unit-12.json" },
+    { "number": 13, "title": "Contrast (Advanced)", "file": "unit-13.json" },
+    { "number": 14, "title": "Cause and Result (Advanced)", "file": "unit-14.json" },
+    { "number": 15, "title": "Opinion and Attitude", "file": "unit-15.json" },
+    { "number": 16, "title": "Probability and Certainty", "file": "unit-16.json" },
+    { "number": 17, "title": "Emphasis and Restriction", "file": "unit-17.json" },
+    { "number": 18, "title": "Comparison (Advanced)", "file": "unit-18.json" }
   ]
 }
