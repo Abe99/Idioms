@@ -1,0 +1,55 @@
+{
+  "unit": {
+    "number": 16,
+    "title": "Probability and Certainty",
+    "exercises": [
+      {
+        "number": 1,
+        "type": "fill-blank",
+        "instruction": "Complete the sentences using the correct word.",
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "It is ________ that the results will change.",
+            "answers": ["unlikely"]
+          },
+          {
+            "number": 2,
+            "prompt": "The experiment will ________ produce similar outcomes.",
+            "answers": ["probably"]
+          },
+          {
+            "number": 3,
+            "prompt": "The outcome is almost ________.",
+            "answers": ["certain"]
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "type": "categorization",
+        "instruction": "Decide whether each word shows probability or certainty.",
+        "shared": {
+          "categories": ["probability", "certainty"]
+        },
+        "questions": [
+          {
+            "number": 1,
+            "prompt": "possibly",
+            "answers": ["probability"]
+          },
+          {
+            "number": 2,
+            "prompt": "definitely",
+            "answers": ["certainty"]
+          },
+          {
+            "number": 3,
+            "prompt": "likely",
+            "answers": ["probability"]
+          }
+        ]
+      }
+    ]
+  }
+}
